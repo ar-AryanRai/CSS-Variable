@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    img{
+      width: 480px;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>
+    Update CSS Variables with <span class="heading-color-change">JS</span>
+  </h1>
+
+  <div class="controls">
+    <label for="spacing">Spacing</label>
+    <input type="range" name="spacing" id="spacing" min="10" max="120" value="10" data-sizing="px">
+
+    <label for="blur">Blur</label>
+    <input type="range" name="blur" id="blur" min="0" max="10" value="0" data-sizing="px">
+
+    <label for="color">Color</label>
+    <input type="color" name="color" value="#ffc600" id="color">
+  </div>
+
+  <img src="https://th.bing.com/th/id/R.fc1ea0c1f7b010369e7fe0401ed9ac35?rik=q1kA94zS4RrgRA&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f5%2f7%2fe%2f471952.jpg&ehk=pXksGVVaZzGa4HPaobKA%2bhLaoD8HbjQJ1ywthGa6b40%3d&risl=&pid=ImgRaw&r=0" alt="image" class="image">
+
+  <script src="script.js"></script>
+
+</body>
+</html>
